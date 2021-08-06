@@ -1,9 +1,9 @@
-# rrr
+# Supabase to Cloudflare Pages _redirects generator
 Simple **Supabase to Cloudflare Pages _redirects generator** example. There are better ways to manage your redirects, but hey, this is fun!
 
 This project is mainly a demonstration of Supabase Function Hooks on data change, combined with Cloudflare Pages Build Hooks.
 
-## Setup
+## Setup
 1. Deploy this repository to Cloudflare Pages project with `SUPABASE_KEY` and `SUPABASE_URL` build variables _(more info in Cloudflare Pages settings below)_
 2. Create Cloudflare Pages build hook in Project Settings and save it for step 4.
 3. Run init SQL to create the `redirects` table _(SQL -> New Query)_

@@ -1,6 +1,8 @@
 # Supabase to Cloudflare Pages _redirects generator
 Simple **Supabase to Cloudflare Pages _redirects generator** example. There are better ways to manage your redirects, but hey, this is fun!
 
+![alt text](./screenshot.png)
+
 This project is mainly a demonstration of Supabase Function Hooks on data change, combined with Cloudflare Pages Deploy Hooks.
 
 ## Setup

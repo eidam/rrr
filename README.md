@@ -1,11 +1,11 @@
 # Supabase to Cloudflare Pages _redirects generator
 Simple **Supabase to Cloudflare Pages _redirects generator** example. There are better ways to manage your redirects, but hey, this is fun!
 
-This project is mainly a demonstration of Supabase Function Hooks on data change, combined with Cloudflare Pages Build Hooks.
+This project is mainly a demonstration of Supabase Function Hooks on data change, combined with Cloudflare Pages Deploy Hooks.
 
 ## Setup
 1. Deploy this repository to Cloudflare Pages project with `SUPABASE_KEY` and `SUPABASE_URL` build variables _(more info in Cloudflare Pages settings below)_
-2. Create Cloudflare Pages build hook in Project Settings and save it for step 4.
+2. Create Cloudflare Pages Deploy Hook in Project Settings and save it for step 4.
 3. Run init SQL to create the `redirects` table _(SQL -> New Query)_
 4. Add Supabase Function Hook for table `redirects` on all updates _(Database -> Function Hooks)_
 5. Add or edit some redirects in the Supabase Table Editor, all changes should trigger Pages build in the background _(takes ~1 minute to deploy)_
@@ -30,7 +30,7 @@ create table public.redirects (
 - table `redirects`
 - all (Insert, Update, Delete) event
 - POST method
-- URL is the Cloudflare Pages Deploy hook
+- URL is the Cloudflare Pages Deploy Hook
 
 ## Examples
 - https://redirects.pages.dev

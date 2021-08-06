@@ -1,0 +1,8 @@
+{
+    "name": "rrr",
+    "version": "0.0.1",
+    "scripts": {
+        "rrr": "curl -sS -H \"apikey: ${SUPABASE_KEY}\" \"${SUPABASE_URL}/rest/v1/redirects?active.true\" | jq -r '.[] | .source + \" \" + .destination + \" \" + \"\\(.code|tostring)\"' > _redirects"
+    }
+  }
+  

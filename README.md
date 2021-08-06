@@ -8,7 +8,7 @@ This project is mainly a demonstration of Supabase Function Hooks on data change
 2. Create Cloudflare Pages build hook in Project Settings and save it for step 4.
 3. Run init SQL to create the `redirects` table _(SQL -> New Query)_
 4. Add Supabase Function Hook for table `redirects` on all updates _(Database -> Function Hooks)_
-5. Add or edit some redirects, all changes should trigger Pages build in the background _(takes ~1 minute to deploy)_
+5. Add or edit some redirects in the Supabase Table Editor, all changes should trigger Pages build in the background _(takes ~1 minute to deploy)_
 
 ### Init SQL 
 ```sql
